@@ -7,3 +7,4 @@ var a = {aaa: 10,
 console.log(a);
 delete a.ccc.a2;
 console.log(a);
+console.log('hehhe')
