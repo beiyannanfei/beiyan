@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>文档的标题</title>
+</head>
+
+<body>
+抽奖ID: <input class="text" id="inputLotteryId" value="hello world"><br><br>
+抽奖Ti: <input class="text" id="inputLotteryLength" onblur="testOnfocus(this.id)"><br><br>
+<button onclick="copyText()">开始抽奖</button><br><br>
+
+<font face="verdana" onclick="fontText()">A heading</font><br><br>
+
+
+<script>
+    function copyText() {
+        var testid = document.getElementById("inputLotteryId").value;
+        alert(testid);
+        document.getElementById("inputLotteryLength").value = testid;
+    }
+</script>
+<script>
+    function testOnfocus(id) {
+        alert(document.getElementById(id).value);
+    }
+    function fontText() {
+        alert("font");
+    }
+</script>
+
+<a href="http://baidu.com" onclick="linkText()">W3School</a>    //超链接点击事件
+
+<script>
+    function linkText() {
+        alert("即将前往百度...");
+    }
+</script>
+
+<!--可以在 <abbr> 标签中使用全局的 title 属性，这样就能够在鼠标指针移动到 <abbr> 元素上时显示出简称/缩写的完整版本。-->
+<br><br>The <abbr title="People's Republic of China">PRC</abbr> was founded in 1949.
+
+<!--标记一个首字母缩写-->
+<br><br><acronym title="World Wide Web">WWW</acronym>
+
+<br><br><p>这是普通文本 - <b>这是粗体文本</b>。</p>
+
+<br><br><p>这是普通文本 - <big>这是大字体文本</big>。</p>
+</body>
+</html>
